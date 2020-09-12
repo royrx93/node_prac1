@@ -1,0 +1,23 @@
+{
+  "name": "node_prac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nd_p1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royrx93/node_prac1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/royrx93/node_prac1/issues"
+  },
+  "homepage": "https://github.com/royrx93/node_prac1#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
