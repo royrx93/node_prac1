@@ -1,0 +1,9 @@
+新建git 
+连接本地
+新建node
+
+stage1
+    从零搭建开发环境，不使用任何框架
+    使用nodemon监测文件变化，自动重启node
+    使用cross-env设置环境变量
+

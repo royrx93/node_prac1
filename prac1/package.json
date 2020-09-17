@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/royrx93/node_prac1#readme",
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "nodemailer": "^6.4.11"
   }
 }
