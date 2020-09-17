@@ -1,0 +1,13 @@
+bin —> www.js  
+    create server
+
+app.js
+    system setting
+    get path query router
+
+router
+    only care about router
+    find the correct method to handle data
+
+controller
+    deal with data
