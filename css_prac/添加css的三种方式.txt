@@ -1,0 +1,41 @@
+外部样式表 （可）
+  css保存在.css文件中
+  在html的head中使用<link>引用
+
+内部样式表  （可）
+  不使用外部css文件
+  将css放在html<style>里
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: pink;
+        }
+    </style>
+</head>
+
+内联样式  （不推荐）
+  仅影响一个元素
+  在html元素的style属性中添加
+
+
+css选择器
+
+<p class = "paragraph" id = "para1"> looorem </p>
+
+1: 指向p标签
+p{
+    color:red;
+}
+
+2: 用class（不在乎标签），可以重复
+.paragraph{
+    color:red;
+}
+
+3：用id, id 是唯一的
+#para1{
+    color:red;
+}

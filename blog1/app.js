@@ -1,7 +1,7 @@
 const querystring = require('querystring')
 const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
-
+var nodemailer  = require('nodemailer');
 
 const serverHandle = (req, res) =>{
     //设置返回格式 JSON
@@ -42,6 +42,26 @@ const serverHandle = (req, res) =>{
 
 
 }
+
+var mailTransport = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    requireTLS: true,
+    auth : {
+        user : 'nobodycares.verify@gmail.com',
+        pass : 'Nobody123'
+    },
+});
+
+mailTransport.sendMail({
+    from    : 'Nobodycares<nobodycares.verify@gmail.com>'
+  , to      : '<royfmttm@gmail.com>'
+  , subject : 'Node.JS通过SMTP协议从gmail邮箱发送邮件'
+  , html    : '这是一封测试邮件 <br> '
+}, function(err, res) {
+    console.log(err, res);
+});
 
 module.exports = serverHandle
 
